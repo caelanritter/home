@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caelan Ritter</title>
+    <meta name"description" content="Caelan Ritter is a postdoctoral scholar in mathematics at Vanderbilt University."></meta>
+    <style>
+      body {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	background-color: #f5f5f5;
+	/* margin-top: 20px; */
+	margin: 20px;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	/* jutify-content: space-between; */
+	/* align-items: center; */
+      }
+      .content {
+	/* flex-shrink: 1; */
+        margin: 10px;
+	@media only screen and (min-width: 1024px) {
+	  width: 40vw;
+	}
+	  
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+      p {
+        color: #666;
+        text-align: justify;
+      }
+      h2 {
+        color: #333;
+        margin-top: 10px;
+      }
+      ul {
+        margin-left: 0px;
+      }
+      li {
+        color: #666;
+        margin-bottom: 10px;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      img {
+        /* width: auto; */
+        margin: 10px;
+	/* margin-left: auto; */
+	max-width: 90vw;
+	max-height: 80vh;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      }
+      .centering {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+      }
+      .hidden {
+        display: none;
+      }
+      .indented {
+        margin-left: 20px;
+      }
+      /* Tooltip container */
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+      /* Tooltip text */
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 1;
+        transition: opacity 0.1s;
+      }
+      /* Tooltip text visible on hover */
+      /* .tooltip:hover .tooltiptext { */
+      /*   visibility: visible; */
+      /*   opacity: 1; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Caelan Ritter</h1>
+      <p>My name is Caelan Ritter, and I am a postdoctoral scholar in mathematics at Vanderbilt University.  I received my Ph.D. in 2026 at the University of Washington under <a href="https://sites.math.washington.edu/~farbod/">Farbod Shokrieh</a>.  I am interested broadly in algebraic and tropical geometry, with a focus on the intersection theory of tropical abelian varieties.</p>
+      <p>You can reach me by email at <a href="mailto:caelan.ritter@vanderbilt.edu">caelan.ritter@vanderbilt.edu</a>; <!--see also my <a href="https://math.washington.edu/people/caelan-ritter">department profile</a> for my current office hours.--> I have an <a href="key.asc">OpenPGP key</a>.</p>
+      <h2>Research</h2>
+      <ul>
+        <li> <i>The Ceresa period from tropical homology.</i>
+	  <div class="indented">Forum of Mathematics, Sigma, Volume 13, 2025, e112,
+	    <a href="https://arxiv.org/abs/2405.07402">arXiv</a>,
+	    <a href="https://doi.org/10.1017/fms.2025.10071">accepted version</a>,
+	    
+	    <a href=# class="tooltip" onclick="copyToClipboard('@inproceedings{ritter2025ceresa,\n  title={The {C}eresa period from tropical homology},\n  author={Ritter, Caelan},\n  booktitle={Forum of Mathematics, Sigma},\n  volume={13},\n  pages={e112},\n  year={2025},\n  organization={Cambridge University Press}\n}', 'tooltip1')">BibTeX<span class="tooltiptext" id="tooltip1">copied!</span></a>.
+	    <!-- <button onclick="toggleText()">abstract</button><span id="moreText" class="hidden">Additional text here...</span> -->
+	  </div>
+	</li>
+        <li> <i>Prym&ndash;Brill&ndash;Noether loci of special curves</i> (with Steven Creech, Yoav Len, and Derek Wu).
+	  <div class="indented">International Mathematics Research Notices, Volume 2022, Issue 4, February 2022, Pages 2688&ndash;2728,
+	    <a href="https://arxiv.org/abs/1912.02863">arXiv</a>,
+	    <a href="https://doi.org/10.1093/imrn/rnaa207">accepted version</a>,
+	    <a href=# class="tooltip" onclick="copyToClipboard('@article{creech2022prym,\n  title={Prym--{B}rill--{N}oether loci of special curves},\n  author={Creech, Steven and Len, Yoav and Ritter, Caelan and Wu, Derek},\n  journal={International Mathematics Research Notices},\n  volume={2022},\n  number={4},\n  pages={2688--2728},\n  year={2022},\n  publisher={Oxford University Press}\n}\n', 'tooltip2')">BibTeX<span class="tooltiptext" id="tooltip2">copied!</span></a>.
+	  </div>
+	</li>
+      </ul>
+      <h2>Teaching</h2>
+      <ul>
+	<li> Fall 2026: Math 3800, Theory of Numbers </li>
+        <li> Spring 2024: Math 224, Advanced Multivariable Calculus </li>
+      </ul>
+    </div>
+    <div class="centering">
+      <img src="tree.jpg" alt="A photo of me on Rialto Beach in Olympic National Park, courtesy of Moshe Steyn." title="A photo of me on Rialto Beach in Olympic National Park, courtesy of Moshe Steyn.">
+    </div>
+
+    <script>      
+      function toggleText() {
+	  var moreText = document.getElementById("moreText");
+	  if (moreText.style.display === "none") {
+	      moreText.style.display = "inline";
+	  } else {
+	      moreText.style.display = "none";
+	  }
+      }
+      function copyToClipboard(text, tooltipId) {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        // Show tooltip
+        const tooltip = document.getElementById(tooltipId);
+          tooltip.style.visibility = 'visible';
+        // Hide tooltip after 2 seconds
+        setTimeout(() => {
+          tooltip.style.visibility = 'hidden';
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>
